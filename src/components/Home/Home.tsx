@@ -6,7 +6,7 @@ export const Home = () => {
     <>
       <div className="bg vh-100 ">
         <Container className="pt text-light d-flex flex-column justify-content-center plus home-query">
-          <h1 className="mb-5">Kinesiología a Domicilio</h1>
+          <h1 className="mb-5 text-uppercase">Kinesiología a Domicilio</h1>
           <div>
             <h5 className="lh-sm">
               <GiCheckMark className="me-4" />
@@ -14,7 +14,7 @@ export const Home = () => {
             </h5>
             <h5 className="lh-base">
               <GiCheckMark className="me-4" />
-              Kinesiología respiratoria preventiva
+              Kinesiología respiratoria
             </h5>
             <h5 className="lh-base">
               <GiCheckMark className="me-4" />
@@ -40,9 +40,7 @@ export const Home = () => {
               target="_blank"
               className="p-3 rounded-4"
             >
-              <small>
-                Reservá una cita por <strong>WhatsApp</strong> ahora
-              </small>
+              Reservá una cita por <strong>WhatsApp</strong> ahora
             </Button>
           </footer>
         </Container>
