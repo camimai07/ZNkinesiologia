@@ -35,17 +35,6 @@ export const Home = () => {
             </p>
           </div>
           <footer className="mt-5">
-            {/* <a
-              href="https://wa.me/+5491158953540"
-              role="button"
-              //   className="btn btn-outline-light"
-            >
-              <button className="btn btn-outline-light">
-                <small>
-                  Reserva una cita por <strong>WhatsApp</strong> ahora
-                </small>
-              </button>
-            </a> */}
             <Button
               variant="outline-light"
               href="https://wa.me/+5491158953540"
