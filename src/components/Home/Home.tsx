@@ -6,9 +6,11 @@ export const Home = () => {
     <>
       <div className="bg vh-100 ">
         <Container className="pt text-light d-flex flex-column justify-content-center plus home-query">
-          <h1 className="mb-5 text-uppercase">Kinesiología a Domicilio</h1>
+          <h1 className="mb-5 text-uppercase query-text">
+            Kinesiología a Domicilio
+          </h1>
           <div>
-            <h5 className="lh-sm">
+            <h5 className="lh-base">
               <GiCheckMark className="me-4" />
               Kinesiología motora
             </h5>
@@ -39,6 +41,7 @@ export const Home = () => {
               href="https://wa.me/+5491158953540"
               target="_blank"
               className="p-3 rounded-4"
+              size="lg"
             >
               Reservá una cita por <strong>WhatsApp</strong> ahora
             </Button>

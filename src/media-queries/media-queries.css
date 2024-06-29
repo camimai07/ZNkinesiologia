@@ -26,4 +26,7 @@
   .home-query {
     align-items: center;
   }
+  .query-text {
+    text-align: center;
+  }
 }
