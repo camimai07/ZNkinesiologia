@@ -9,7 +9,7 @@ export const Navbar = () => {
       <Nav className="nav-query d-flex align-items-center justify-content-between w-100 px-5 py-4 position-fixed ">
         <Nav.Item>
           <NavLink
-            className="text-decoration-none text-light bad"
+            className="text-decoration-none text-light bad fs-5"
             to={"ZNkinesiologia/"}
           >
             <Logo />
