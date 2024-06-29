@@ -4,41 +4,41 @@ import { GiCheckMark } from "react-icons/gi";
 export const Home = () => {
   return (
     <>
-      <div className="bg vh-100">
+      <div className="bg vh-100 ">
         <Container className="pt text-light d-flex flex-column justify-content-center plus home-query">
           <h1 className="mb-5">Kinesiología a Domicilio</h1>
           <div>
-            <p>
+            <h5 className="lh-sm">
               <GiCheckMark className="me-4" />
               Kinesiología motora
-            </p>
-            <p>
+            </h5>
+            <h5 className="lh-base">
               <GiCheckMark className="me-4" />
               Kinesiología respiratoria preventiva
-            </p>
-            <p>
+            </h5>
+            <h5 className="lh-base">
               <GiCheckMark className="me-4" />
               Pacientes ventilados
-            </p>
-            <p>
+            </h5>
+            <h5 className="lh-base">
               <GiCheckMark className="me-4" />
               Rehabilitación traumatológica
-            </p>
-            <p>
+            </h5>
+            <h5 className="lh-base">
               <GiCheckMark className="me-4" />
               Neurotapping
-            </p>
-            <p>
+            </h5>
+            <h5 className="lh-base">
               <GiCheckMark className="me-4" />
               Adultos y pediátricos
-            </p>
+            </h5>
           </div>
           <footer className="mt-5 quick">
             <Button
               variant="outline-light"
               href="https://wa.me/+5491158953540"
               target="_blank"
-              className="p-2 rounded-3"
+              className="p-3 rounded-4"
             >
               <small>
                 Reservá una cita por <strong>WhatsApp</strong> ahora
