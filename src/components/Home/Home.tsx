@@ -33,14 +33,15 @@ export const Home = () => {
               Adultos y pediátricos
             </p>
           </div>
-          <footer className="mt-5">
+          <footer className="mt-5 quick">
             <Button
               variant="outline-light"
               href="https://wa.me/+5491158953540"
               target="_blank"
+              className="p-2 rounded-3"
             >
               <small>
-                Reserva una cita por <strong>WhatsApp</strong> ahora
+                Reservá una cita por <strong>WhatsApp</strong> ahora
               </small>
             </Button>
           </footer>
