@@ -41,7 +41,6 @@ export const Home = () => {
               href="https://wa.me/+5491158953540"
               target="_blank"
               className="p-3 rounded-4"
-              size="lg"
             >
               Reservá una cita por <strong>WhatsApp</strong> ahora
             </Button>
