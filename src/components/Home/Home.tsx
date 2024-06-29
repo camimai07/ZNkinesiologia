@@ -1,7 +1,6 @@
 import { Button, Container } from "react-bootstrap";
 import "./Home.css";
 import { GiCheckMark } from "react-icons/gi";
-import { Link } from "react-router-dom";
 export const Home = () => {
   return (
     <>

@@ -3,7 +3,11 @@ export const Logo = () => {
   return (
     <>
       <div>
-        <img src={logo} style={{ width: "80px", marginRight: "10px" }} alt="" />
+        <img
+          src={logo}
+          style={{ width: "80px", marginRight: "10px" }}
+          alt="logo"
+        />
         ZNKinesiología
       </div>
     </>

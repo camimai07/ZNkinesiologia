@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="*" element={<Home />}></Route>
-        <Route path="/Inicio" element={<Home />}></Route>
+        <Route path="ZNkinesiologia/Inicio" element={<Home />}></Route>
         <Route path="/Nosotros" element={<Us />}></Route>
         <Route path="/Servicios" element={<OurServices />}></Route>
         <Route path="/Contacto" element={<Contact />}></Route>
