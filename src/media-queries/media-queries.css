@@ -1,0 +1,29 @@
+@media (width <= 700px) {
+  /* ------------- Navbar --------------- */
+  .menu {
+    display: block !important;
+  }
+  .nav-query {
+    flex-direction: column-reverse !important;
+  }
+  .nav-query-items {
+    display: none !important;
+    /* visibility: hidden; */
+    flex-direction: column !important;
+    text-align: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  /* .nav-query-logo {
+    display: none;
+  } */
+  .nav-query-contact {
+    /* visibility: hidden !important; */
+    display: none !important;
+  }
+
+  /* -------------- Home ------------- */
+  .home-query {
+    align-items: center;
+  }
+}
