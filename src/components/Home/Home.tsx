@@ -1,6 +1,7 @@
 import { Button, Container } from "react-bootstrap";
 import "./Home.css";
 import { GiCheckMark } from "react-icons/gi";
+import { Link } from "react-router-dom";
 export const Home = () => {
   return (
     <>
@@ -34,8 +35,23 @@ export const Home = () => {
             </p>
           </div>
           <footer className="mt-5">
-            <Button variant="outline-light">
-              <small className="quick">
+            {/* <a
+              href="https://wa.me/+5491158953540"
+              role="button"
+              //   className="btn btn-outline-light"
+            >
+              <button className="btn btn-outline-light">
+                <small>
+                  Reserva una cita por <strong>WhatsApp</strong> ahora
+                </small>
+              </button>
+            </a> */}
+            <Button
+              variant="outline-light"
+              href="https://wa.me/+5491158953540"
+              target="_blank"
+            >
+              <small>
                 Reserva una cita por <strong>WhatsApp</strong> ahora
               </small>
             </Button>
