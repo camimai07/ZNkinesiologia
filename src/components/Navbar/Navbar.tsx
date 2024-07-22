@@ -1,15 +1,30 @@
-import { Button, Nav, NavDropdown } from "react-bootstrap";
+import {
+  Button,
+  ButtonGroup,
+  Col,
+  Collapse,
+  Container,
+  Dropdown,
+  DropdownButton,
+  Nav,
+  NavDropdown,
+  Row,
+  Stack,
+} from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { Logo } from "./Logo";
 import { IoMenuOutline } from "react-icons/io5";
+import { useState } from "react";
+import { NavItems } from "./NavItems";
 
 export const Navbar = () => {
+  const [open, setOpen] = useState(false);
   return (
     <>
-      <Nav className="nav-query d-flex align-items-center justify-content-between w-100 px-5 py-4 position-fixed ">
+      <Nav className="nav-query d-flex align-items-center justify-content-between w-100 px-5 py-4 position-fixed z-3">
         <Nav.Item>
           <NavLink
-            className="text-decoration-none text-light bad fs-5"
+            className="text-decoration-none text-light plus fs-5 logo-none"
             to={"ZNkinesiologia/"}
           >
             <Logo />
@@ -17,51 +32,44 @@ export const Navbar = () => {
         </Nav.Item>
         <div
           style={{ display: "flex" }}
-          className="nav-query-items justify-content-between w-25 "
+          className="nav-query-items justify-content-between w-25 text-light "
         >
-          <Nav.Item>
-            <NavLink
-              className="text-decoration-none text-light quick"
-              to={"ZNkinesiologia/Inicio"}
-            >
-              Inicio
-            </NavLink>
-          </Nav.Item>
-          <NavDropdown
-            title="Servicios"
-            id="nav-dropdown"
-            bsPrefix="text-decoration-none text-light quick"
-          >
-            <NavDropdown.Item>Action</NavDropdown.Item>
-            <NavDropdown.Item>Another action</NavDropdown.Item>
-            <NavDropdown.Item>Something else here</NavDropdown.Item>
-            <NavDropdown.Item>Separated link</NavDropdown.Item>
-          </NavDropdown>
-
-          <Nav.Item>
-            <NavLink
-              className="text-decoration-none text-light quick"
-              to={"ZNkinesiologia/Nosotros"}
-            >
-              Nosotros
-            </NavLink>
-          </Nav.Item>
+          <NavItems />
         </div>
         <Nav.Item>
           <NavLink
             style={{ visibility: "visible" }}
-            className="text-decoration-none text-light quick nav-query-contact"
+            className="text-decoration-none  nav-query-contact"
             to={"ZNkinesiologia/Contacto"}
           >
             <Button variant="outline-light">Contacto</Button>
           </NavLink>
         </Nav.Item>
-
-        <IoMenuOutline
-          color="white"
-          style={{ display: "none", cursor: "pointer" }}
-          className="menu mb-4"
-        />
+        <Collapse in={open}>
+          <div className="justify-content-center text-center bg-dark w-50 rounded-4 py-2">
+            <NavItems />
+            <Nav.Item className="my-3">
+              <NavLink
+                className="text-decoration-none "
+                to={"ZNkinesiologia/Contacto"}
+              >
+                <Button variant="outline-light">Contacto</Button>
+              </NavLink>
+            </Nav.Item>
+          </div>
+        </Collapse>
+        <Button
+          onClick={() => setOpen(!open)}
+          variant="link"
+          className="menu"
+          style={{ display: "none" }}
+        >
+          <IoMenuOutline
+            color="white"
+            style={{ display: "none", cursor: "pointer" }}
+            className="menu"
+          />
+        </Button>
       </Nav>
     </>
   );

@@ -29,6 +29,14 @@
   font-family: quick;
   src: url(../public/static/Quicksand-Light.ttf);
 }
+@font-face {
+  font-family: zen;
+  src: url(../public/static/ZenMaruGothic-Medium.ttf);
+}
+
+.zen {
+  font-family: zen;
+}
 .cinzel {
   font-family: cinzel;
 }

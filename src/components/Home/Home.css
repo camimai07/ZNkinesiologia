@@ -1,9 +1,21 @@
-.bg {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../../assets/img/ZN_FONDO.png) no-repeat !important;
+.pt {
+  padding-top: 80px !important;
+}
+.imagen {
+  /* width: 800px; */
+  /* height: 500px; */
+  /* margin-right: 20px; */
+  width: 100vw;
+
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* right: 0; */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../assets/img/ZN_FONDO2.png) no-repeat !important;
+  /* background-color: rgb(115, 202, 196); */
   background-position: center !important;
   background-size: cover !important;
 }
-.pt {
-  padding-top: 180px !important;
+.color-text {
+  color: rgb(45, 133, 220);
 }

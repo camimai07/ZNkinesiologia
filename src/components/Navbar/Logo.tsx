@@ -8,7 +8,7 @@ export const Logo = () => {
           style={{ width: "80px", marginRight: "10px" }}
           alt="logo"
         />
-        ZNKinesiología
+        ZN Kinesiología
       </div>
     </>
   );
