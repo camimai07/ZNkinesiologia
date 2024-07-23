@@ -1,21 +1,9 @@
-import {
-  Button,
-  ButtonGroup,
-  Col,
-  Collapse,
-  Container,
-  Dropdown,
-  DropdownButton,
-  Nav,
-  NavDropdown,
-  Row,
-  Stack,
-} from "react-bootstrap";
+import { Button, Collapse, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { Logo } from "./Logo";
-import { IoMenuOutline } from "react-icons/io5";
 import { useState } from "react";
 import { NavItems } from "./NavItems";
+import { IoIosMenu } from "react-icons/io";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -46,7 +34,10 @@ export const Navbar = () => {
           </NavLink>
         </Nav.Item>
         <Collapse in={open}>
-          <div className="justify-content-center text-center bg-dark w-50 rounded-4 py-2">
+          <div
+            className="justify-content-center text-center bg-dark w-50 rounded-4 py-2"
+            style={{ minWidth: "300px" }}
+          >
             <NavItems />
             <Nav.Item className="my-3">
               <NavLink
@@ -64,10 +55,11 @@ export const Navbar = () => {
           className="menu"
           style={{ display: "none" }}
         >
-          <IoMenuOutline
+          <IoIosMenu
             color="white"
             style={{ display: "none", cursor: "pointer" }}
             className="menu"
+            size={30}
           />
         </Button>
       </Nav>
