@@ -6,7 +6,7 @@ import { Logo } from "../Navbar/Logo";
 export const Home = () => {
   return (
     <>
-      <div className="vh-100 w-100 imagen position-relative color-text ">
+      <div className=" w-100 imagen position-relative color-text pb-3">
         <Container>
           <div>
             <div className="texto pt d-flex flex-column justify-content-center plus home-query text-light">
@@ -47,7 +47,7 @@ export const Home = () => {
                   Adultos y pediátricos
                 </h5>
               </div>
-              <footer className="mt-5 quick">
+              <footer className="my-5 quick">
                 <Button
                   variant="outline-light"
                   href="https://wa.me/+5491158953540"

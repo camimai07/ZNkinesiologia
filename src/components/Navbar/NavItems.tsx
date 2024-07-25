@@ -19,10 +19,10 @@ export const NavItems = () => {
         menuVariant="dark"
         bsPrefix="text-decoration-none text-light "
       >
-        <NavDropdown.Item>Action</NavDropdown.Item>
-        <NavDropdown.Item>Another action</NavDropdown.Item>
+        <NavDropdown.Item></NavDropdown.Item>
+        {/* <NavDropdown.Item>Another action</NavDropdown.Item>
         <NavDropdown.Item>Something else here</NavDropdown.Item>
-        <NavDropdown.Item>Separated link</NavDropdown.Item>
+        <NavDropdown.Item>Separated link</NavDropdown.Item> */}
       </NavDropdown>
 
       <Nav.Item className="p-2">
