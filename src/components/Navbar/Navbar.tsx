@@ -1,5 +1,5 @@
 import { Button, Collapse, Nav } from "react-bootstrap";
-import { NavLink, Route } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Logo } from "./Logo";
 import { useState } from "react";
 import { NavItems } from "./NavItems";

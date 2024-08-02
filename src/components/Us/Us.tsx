@@ -1,4 +1,4 @@
-import { Badge } from "react-bootstrap";
+// import { Badge } from "react-bootstrap";
 import fondopeople from "../../assets/img/fondo-people.png";
 import "./Us.css";
 import { IoSparklesSharp } from "react-icons/io5";
@@ -12,13 +12,13 @@ export const Us = () => {
           style={{ height: "120px", background: "#3253ad " }}
         ></div>
         <div
-          className="d-grid gap-3 text-center query-text-us"
+          className="d-grid gap-3 text-center query-text-us mx-3"
           style={{ marginTop: "170px" }}
         >
           <h1 className="fw-bold text-secondary w-100 ">
             Nuestro equipo <IoSparklesSharp color="#31cfeb " />
           </h1>
-          <h5 className="lh-base text-body">
+          <h5 className="lh-base text-body ">
             En ZN Kinesiología contamos con un equipo de profesionales altamente
             comprometido y con una amplia experiencia en kinesiología motora y
             respiratoria. Nos dedicamos a brindar un servicio personalizado,
