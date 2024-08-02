@@ -1,5 +1,5 @@
 import { Button, Collapse, Nav } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, Route } from "react-router-dom";
 import { Logo } from "./Logo";
 import { useState } from "react";
 import { NavItems } from "./NavItems";
@@ -13,7 +13,7 @@ export const Navbar = () => {
         <Nav.Item>
           <NavLink
             className="text-decoration-none text-light plus fs-5 logo-none"
-            to={"ZNkinesiologia/"}
+            to={"ZNkinesiologia"}
           >
             <Logo />
           </NavLink>
@@ -57,7 +57,10 @@ export const Navbar = () => {
         >
           <IoIosMenu
             color="white"
-            style={{ display: "none", cursor: "pointer" }}
+            style={{
+              display: "none",
+              cursor: "pointer",
+            }}
             className="menu"
             size={30}
           />

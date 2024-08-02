@@ -6,7 +6,7 @@ import { Logo } from "../Navbar/Logo";
 export const Home = () => {
   return (
     <>
-      <div className=" w-100 imagen position-relative color-text pb-3">
+      <div className=" w-100 h-100 overflow-y-scroll imagen position-relative color-text pb-3">
         <Container>
           <div>
             <div className="texto pt d-flex flex-column justify-content-center plus home-query text-light">
